@@ -1,0 +1,36 @@
+{
+  "did": "did:plc:7vttew3e6cy5wcrrqbsxs7vh",
+  "didDoc": {
+    "@context": [
+      "https://www.w3.org/ns/did/v1",
+      "https://w3id.org/security/multikey/v1",
+      "https://w3id.org/security/suites/secp256k1-2019/v1"
+    ],
+    "id": "did:plc:7vttew3e6cy5wcrrqbsxs7vh",
+    "alsoKnownAs": [
+      "at://mike-programmer.bsky.social"
+    ],
+    "verificationMethod": [
+      {
+        "id": "did:plc:7vttew3e6cy5wcrrqbsxs7vh#atproto",
+        "type": "Multikey",
+        "controller": "did:plc:7vttew3e6cy5wcrrqbsxs7vh",
+        "publicKeyMultibase": "zQ3shTeamoQhGnfsiPwQ2w4SSR3Z5Rrkc8MkjXdi9Mgfi74jm"
+      }
+    ],
+    "service": [
+      {
+        "id": "#atproto_pds",
+        "type": "AtprotoPersonalDataServer",
+        "serviceEndpoint": "https://witchesbutter.us-west.host.bsky.network"
+      }
+    ]
+  },
+  "handle": "mike-programmer.bsky.social",
+  "email": "ekim197711@gmail.com",
+  "emailConfirmed": true,
+  "emailAuthFactor": false,
+  "accessJwt": "...",
+  "refreshJwt": "...",
+  "active": true
+}

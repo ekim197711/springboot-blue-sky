@@ -1,0 +1,9 @@
+{
+  "uri": "...",
+  "cid": "....",
+  "commit": {
+    "cid": "...",
+    "rev": "..."
+  },
+  "validationStatus": "valid"
+}

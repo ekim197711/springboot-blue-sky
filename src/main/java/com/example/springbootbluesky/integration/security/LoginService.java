@@ -1,6 +1,7 @@
 package com.example.springbootbluesky.integration.security;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.RequestEntity;
 import org.springframework.stereotype.Service;
@@ -11,6 +12,7 @@ import java.util.Objects;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class LoginService {
     //    curl -X POST $PDSHOST/xrpc/com.atproto.server.createSession \
 //            -H "Content-Type: application/json" \
@@ -26,6 +28,7 @@ public class LoginService {
         RequestEntity request = RequestEntity.post(URL_LOGIN)
                 .header(HttpHeaders.CONTENT_TYPE, "application/json")
                 .body(dataToPost);
+        log.info("Logged in!");
         return Objects.requireNonNull(restTemplate.exchange(request, Map.class).getBody())
                 .get("accessJwt").toString();
     }

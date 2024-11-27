@@ -5,7 +5,6 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class HeaderGeneratorService {
-
     public HttpHeaders generate(String token) {
         HttpHeaders headers = new HttpHeaders();
         String bearer = "Bearer ";

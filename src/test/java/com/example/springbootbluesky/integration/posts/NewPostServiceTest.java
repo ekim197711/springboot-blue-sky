@@ -15,7 +15,7 @@ class NewPostServiceTest {
                 new HeaderGeneratorService(),
                 new LoginService()
         ).createPost(String.format("""
-                This post is made from bsky api. Just testing it out. Using Java btw.
+                Another message! Eat vegestables!
                 Timestamp: %s
                 """, LocalDateTime.now()));
         System.out.println(response);
